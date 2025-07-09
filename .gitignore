@@ -1,0 +1,7 @@
+venv/
+data/
+chroma_data/
+.env
+
+.DS_Store
+utils/__pycache__/loader.cpython-310.pyc

@@ -1,0 +1,9 @@
+numpy
+streamlit
+openai
+langchain
+PyMuPDF
+python-dotenv
+tiktoken
+langchain-community
+sentence-transformers
