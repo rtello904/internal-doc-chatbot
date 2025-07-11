@@ -7,3 +7,5 @@ python-dotenv
 tiktoken
 langchain-community
 sentence-transformers
+PyPDF2
+streamlit_chat
