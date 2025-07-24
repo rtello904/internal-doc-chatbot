@@ -13,20 +13,19 @@ DATA_DIR = "data"
 INDEX_DIR = "embeddings/faiss_index"
 
 def main():
-    print("🔍 Loading documents...")
     documents = load_docs(DATA_DIR)
 
-    print(f"📄 Loaded {len(documents)} documents. Splitting into chunks...")
+    print(f"Loaded {len(documents)} documents. Splitting into chunks...")
     splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
     chunks = splitter.split_documents(documents)
 
-    print(f"🧠 Creating embeddings for {len(chunks)} chunks...")
+    print(f"Creating embeddings for {len(chunks)} chunks...")
     embedding_model = OpenAIEmbeddings()
     vector_store = FAISS.from_documents(chunks, embedding_model)
 
-    print(f"💾 Saving FAISS index to {INDEX_DIR}...")
+    print(f"Saving FAISS index to {INDEX_DIR}...")
     vector_store.save_local(INDEX_DIR)
-    print("✅ Done. Embeddings ready!")
+    print("Done. Embeddings ready!")
 
 if __name__ == "__main__":
     main()
