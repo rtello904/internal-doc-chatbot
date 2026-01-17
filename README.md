@@ -45,7 +45,7 @@ Responsibilities:
 
 Run with:
 
-```bash
+```
 streamlit run app.py
 ```
 
@@ -81,15 +81,15 @@ Responsibilities:
 
 Private environment variables (not committed):
 
-HUGGINGFACEHUB_API_TOKEN=...
-OPENAI_API_KEY=...
+HUGGINGFACEHUB_API_TOKEN=...  
+OPENAI_API_KEY=...  
 
 ### .env.example
 
 Template for required environment variables:
 
-HUGGINGFACEHUB_API_TOKEN=your-token-here
-OPENAI_API_KEY=your-key-here
+HUGGINGFACEHUB_API_TOKEN=your-token-here  
+OPENAI_API_KEY=your-key-here  
 
 
 Copy this file to .env and fill in real values.
