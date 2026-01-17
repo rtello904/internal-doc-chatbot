@@ -18,7 +18,8 @@ Documents are processed per session and are not shared globally.
 ## Project Structure
 
 internal-doc-chatbot/
-│
+```text
+
 ├── app.py
 ├── src/
 │ └── embed.py
