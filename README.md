@@ -33,7 +33,17 @@ You upload one or more PDFs → the app chunks the text → embeds it with Sente
 ## Project Structure
 
 ```text
-.
-├── app.py              # Main Streamlit app
-├── requirements.txt    # Python dependencies
-├── README.md           # Project documentation
+
+internal-doc-chatbot/
+│
+├── app.py
+├── src/
+│   └── embed.py
+├── utils/
+│   └── loader.py
+├── .env
+├── .env.example
+├── requirements.txt
+└── README.md
+
+
