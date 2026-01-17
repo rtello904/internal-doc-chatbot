@@ -29,7 +29,7 @@ internal-doc-chatbot/
 ├── .env.example
 ├── requirements.txt
 └── README.md
-
+```
 
 ### app.py
 
